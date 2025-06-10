@@ -1,14 +1,3 @@
 {
-    "java.project.sourcePaths": [
-        "src" // Points to your source files
-    ],
-    "java.project.outputPath": "bin", // Points to your compiled classes
-    "java.project.referencedLibraries": [
-        "c:\\Users\\18178\\OneDrive - UT Arlington\\Documents\\vscode-space\\NameCheck\\lib\\*.jar" // Crucial: tells VS Code to include all JARs in your lib folder
-    ],
-    "java.test.config": {
-        "testRunner": "JUnit5",
-        "workingDirectory": "${workspaceFolder}",
-        // No need to explicitly set classpath here, it will use referencedLibraries
-    }
+   
 }
