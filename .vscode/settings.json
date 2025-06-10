@@ -1,0 +1,13 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib\\org.jacoco.agent-0.8.11-runtime.jar",
+        "lib\\org.jacoco.core-0.8.11.jar",
+        "c:\\Users\\18178\\OneDrive - UT Arlington\\Documents\\vscode-space\\NameCheck\\lib\\junit-platform-launcher-1.10.0.jar",
+        "c:\\Users\\18178\\OneDrive - UT Arlington\\Documents\\vscode-space\\NameCheck\\lib\\unit-jupiter-engine-5.10.0.jar",
+        "c:\\Users\\18178\\OneDrive - UT Arlington\\Documents\\vscode-space\\NameCheck\\lib\\junit-jupiter-api-5.10.0.jar"
+    ]
+}
