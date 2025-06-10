@@ -42,7 +42,7 @@ Perform **control-flow testing** on a fault-seeded Java program, [**Printtokens.
 
 ## Testing Support
 
-### Install Tools
+### Requirements
 
 - IDE: [Eclipse IDE](https://riyagoel192.medium.com/how-to-download-eclipse-java-ide-on-windows-52608032d6d9), [VS Code](https://code.visualstudio.com/download), or others.
 
@@ -79,10 +79,10 @@ _ _ _ _ _ _ _ _
 	   ![An alternative to get clone command](./imgs/clone-command1.jpg)
   
 3  **Check out** the other branches to explore how to write test methods with command "git checkout branch-name".
-  - eclipse-eg-tests: the branch containing an example program and test files based on Eclipse IDE.
-  - vsc-maven-eg-tests: the branch containing an example program and test files based on VS Code.
+  - **eclipse-eg-tests**: the branch containing an example program and test files based on Eclipse IDE.
+  - **vsc-maven-eg-tests**: the branch containing an example program and test files based on VS Code.
 
-4 **Create** your own branch to write your tests with your prefered IDE.
+4 **Create** your own branch to write your tests with your preferred IDE.
 
 _ _ _ _ _ _ _ _
 
