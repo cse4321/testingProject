@@ -56,7 +56,7 @@ _ _ _ _ _ _ _ _
 
 ### Set up the Project Locally (Windows)
 
-1 **Launch** an terminal.
+1 **Launch** a terminal.
 
 
 2 **Clone** your GitHub project repository locally using the Terminal (with the main branch fetched).
