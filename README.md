@@ -36,10 +36,7 @@ Perform **control-flow testing** on a fault-seeded Java program, [**Printtokens.
 
 - Check all the deliverables in the [project slides](./project.summer.2025.pdf).
 - Put all the deliverables in Branch **main** in a folder "deliverables".
-- Commit the changes before the deadline and push to your GitHub project repository. 
-
-Note: for the code coverage reports, they must be **HTML** files with the supported files and folders (see an example of an complete HTML report on Branch eclipse_eg_tests). 
-
+- Commit the changes before the deadline. 
 
 <hr>
 
@@ -47,19 +44,22 @@ Note: for the code coverage reports, they must be **HTML** files with the suppor
 
 ### Install Tools
 
-- [Eclipse IDE](https://riyagoel192.medium.com/how-to-download-eclipse-java-ide-on-windows-52608032d6d9), or [VS Code](https://code.visualstudio.com/download).
+- IDE: [Eclipse IDE](https://riyagoel192.medium.com/how-to-download-eclipse-java-ide-on-windows-52608032d6d9), [VS Code](https://code.visualstudio.com/download), or others.
 
 - [Git](https://www.howtogeek.com/832083/how-to-install-git-on-windows/)
 
 - [Java SE 16](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html) (Need to create an account to download. This version is tested and other versions may work.)
 
+Note: Highly recommend to use Eclipse. However, you can use other IDEs. 
 
 _ _ _ _ _ _ _ _
 
 ### Set up the Project Locally (Windows)
 
-**1**  **Launch** an terminal.
-**2**  **Clone** your GitHub project repository locally using the Terminal (with the main branch already fetched).
+1 **Launch** an terminal.
+
+
+2 **Clone** your GitHub project repository locally using the Terminal (with the main branch fetched).
 
   - Navigate to the directory for your project in the Terminal.
   
@@ -75,22 +75,17 @@ _ _ _ _ _ _ _ _
     git clone https://<access_token>@github.com/cse4321/<GitHub_project_name>.git
     ```
     
-    + An alternative to get clone command:
-   
-	![An alternative to get clone command](./imgs/clone-command1.jpg)
+    + An alternative to get clone command:   
+	   ![An alternative to get clone command](./imgs/clone-command1.jpg)
   
+3  **Check out** the other branches to explore how to write test methods with command "git checkout branch-name".
+  - eclipse-eg-tests: the branch containing an example program and test files based on Eclipse IDE.
+  - vsc-maven-eg-tests: the branch containing an example program and test files based on VS Code.
 
-  
-**3**  **Check out** the other branches to explore and study how to set up and write test methods by executing **git checkout branch-name**.
-  - eclipse-eg-tests: the branch with an example program and test files based on Eclipse IDE.
-  - vsc-maven-eg-tests: the branch with an example program and test files based on VS Code.
-
-	
-**4**  **create** your own branch to implement test cases to test the given program.
-
-
+4 **Create** your own branch to write your tests with your prefered IDE.
 
 _ _ _ _ _ _ _ _
+
 
 ### Commit and Push Changes to GitHub Repository in the Terminal
 
@@ -116,3 +111,9 @@ git commit -m "commit message"
 ```shell
 git push origin main
 ``` 
+
+
+
+
+
+
