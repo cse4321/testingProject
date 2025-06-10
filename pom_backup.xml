@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com</groupId>
-    <artifactId>try_name_check</artifactId>
+    <artifactId>NameCheck</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
-    <name>try_name_check</name>
+    <name>NameCheck</name>
     <description>A simple project to check names</description>
 
     <properties>
