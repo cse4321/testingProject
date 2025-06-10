@@ -2,7 +2,7 @@
 ### Project
 Perform **control-flow testing** on a fault-seeded Java program, [**Printtokens.java**](./src/Printtokens.java).
 
-[project slides](./project.fall.2025.pdf) | [project rubric](./rubric.pdf)
+[project slides](./project.summer.2025.pdf) | [project rubric](./rubric.pdf)
 
 ### Goals
 - **Identify and fix faults** through testing.
@@ -34,11 +34,11 @@ Perform **control-flow testing** on a fault-seeded Java program, [**Printtokens.
 
 ### Submission
 
-- Check all the deliverables in the [project slides](./project.fall.2025.pdf).
+- Check all the deliverables in the [project slides](./project.summer.2025.pdf).
 - Put all the deliverables in Branch **main** in a folder "deliverables".
-- Commit the changes before the deadline. 
+- Commit the changes before the deadline and push to your GitHub project repository. 
 
-Note: for the code coverage reports, they must be **HTML** files with the supported files and folders (see an example of an HTML report on Branch eg_junit_tests). 
+Note: for the code coverage reports, they must be **HTML** files with the supported files and folders (see an example of an complete HTML report on Branch eclipse_eg_tests). 
 
 
 <hr>
@@ -47,23 +47,19 @@ Note: for the code coverage reports, they must be **HTML** files with the suppor
 
 ### Install Tools
 
-- [Eclipse IDE](https://riyagoel192.medium.com/how-to-download-eclipse-java-ide-on-windows-52608032d6d9) and [Jacoco](https://www.eclemma.org/installation.html#marketplace) through Eclipse IDE.
+- [Eclipse IDE](https://riyagoel192.medium.com/how-to-download-eclipse-java-ide-on-windows-52608032d6d9), or [VS Code](https://code.visualstudio.com/download).
 
 - [Git](https://www.howtogeek.com/832083/how-to-install-git-on-windows/)
 
 - [Java SE 16](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html) (Need to create an account to download. This version is tested and other versions may work.)
 
-Note: Highly recommend to use Eclipse. However, you can use other IDEs. 
 
 _ _ _ _ _ _ _ _
 
 ### Set up the Project Locally (Windows)
 
-**1**  **Launch** Eclipse IDE
-
-**2**  **Press** "**Ctrl+ALT+T**" to open the Terminal viewable in the IDE.
-
-**3**  **Clone** your GitHub project repository locally using the Terminal.
+**1**  **Launch** an terminal.
+**2**  **Clone** your GitHub project repository locally using the Terminal (with the main branch already fetched).
 
   - Navigate to the directory for your project in the Terminal.
   
@@ -83,82 +79,15 @@ _ _ _ _ _ _ _ _
    
 	![An alternative to get clone command](./imgs/clone-command1.jpg)
   
-**4**  **Execute** the clone command to download the repository.
+
   
-**5**  **Enter** the downloaded repository folder (with the main branch already fetched).
-  
-**6**  **Check out** the other branch **eg_junit_tests** by executing **git checkout eg_junit_tests** to fetch Branch eg_junit_tests.
+**3**  **Check out** the other branches to explore and study how to set up and write test methods by executing **git checkout branch-name**.
+  - eclipse-eg-tests: the branch with an example program and test files based on Eclipse IDE.
+  - vsc-maven-eg-tests: the branch with an example program and test files based on VS Code.
+
 	
-**7**  **Open** the project in Eclipse via "**File -> Open Projects from the File System...**" from the repository.
+**4**  **create** your own branch to implement test cases to test the given program.
 
-
-_ _ _ _ _ _ _ _
-
-### Add JUnit x 
-
-1, Right-click your project, select **Build Path** > **Configure Build Path**.
-
-2, Go to the **Libraries** tab, click **Classpath** and then **Add Library**.
-
-3, Select **JUnit** and click "Next".
-
-4, Select **JUnit x** from the dropdown.
-
-5, Click "Finish" and then "Apply and Close".
-
-An example of Java Build Path with JUnit 5 added:
-
-![JUnit configuration](./imgs/JUnit5.jpg)
-
-
-<hr>
-
-### Study How to Write JUnit Tests 
-Examples of JUnit tests are given. 
-The versions for both **JUnit 4** and **JUnit 5** are available. Choose the version you prefer.
-
-Branch **eg_junit4_tests** shows the examples using JUnit 4.
-
-Branch **eg_junit_tests** shows the examples using JUnit 5.
-
-
-**1**  Launch Eclipse IDE (assume that the project is opened via "**File -> Open Projects from the File System...**"). 
-
-**2**  Add JUnit if not done yet.
-
-**3**  Check the current branch in the Terminal (press **Ctrl+ALT+T** to open).
- 
- ```shell
-git branch
- ```
- 
-**4**  Switch to Branch **eg_junit4_tests** or **eg_junit_tests**.  
-    
-```shell
-git checkout eg_junit4_tests | git checkout eg_junit_tests 
-```
-**5**  Learn how to write test methods (resource:[Video](https://youtu.be/DuAqP8IRcbY)).
- 
- **6**  Discard all changes if there are.
- 
- ```shell
-git restore .
- ```
- 
-
-_ _ _ _ _ _ _ _
-
-### Work on Your Own Tests
-**1**  Launch Eclipse IDE. 
-
-**2**  Switch to Branch **main** if not on this branch in the Terminal.    
-    
-```shell
-git checkout main 
-```
-**3**  Do testing on the main branch.
-
-**4**  Commit and Push the changes if necessary. 
 
 
 _ _ _ _ _ _ _ _
@@ -187,9 +116,3 @@ git commit -m "commit message"
 ```shell
 git push origin main
 ``` 
-
-
-
-
-
-
