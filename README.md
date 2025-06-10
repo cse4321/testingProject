@@ -1,11 +1,11 @@
-### NameCheck
+### PureNameCheck
 
-**Project** *PureNameCheck* is created as an example to show how to write JUnit test methods for methods that use *System.in* and *System.out*.
+*PureNameCheck* is created as an example to show how to write JUnit test methods.
 
 **Class** *PureNameCheck* contains:
 
-- a **main** method and 
-- two **regular** methods: 
+- A **main** method and 
+- Two **regular** methods: 
   + *checkPureName* 
   + *getNameFromSystemIn*
 
@@ -57,5 +57,5 @@ An **complete example of an HTML Coverage Report** are shown below:
 
 ### Generate two HTML coverage reports
 
-- End-to-end testing: put all the tests of the main method in one test file and generate by executing this test file.
-- Unit testing: put all the tests of the non-main methods in one test file  and generate by executing this test file.
+- End-to-end testing: put all the tests of the main method in one test file (eg. TestMain.java) and generate by executing this file.
+- Unit testing: put all the tests of the non-main methods in another test file (eg. TestRegularMethods.java)  and generate by executing this file.
