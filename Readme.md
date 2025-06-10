@@ -1,11 +1,11 @@
-### NameCheck
+### PureNameCheck
 
-**Project** *PureNameCheck* is created as an example to show how to write JUnit test methods for methods that use *System.in* and *System.out*.
+*PureNameCheck* is created as an example to show how to write JUnit test methods.
 
 **Class** *PureNameCheck* contains:
 
-- a **main** method and 
-- two **regular** methods: 
+- A **main** method and 
+- Two **regular** methods: 
   + *checkPureName* 
   + *getNameFromSystemIn*
 
@@ -19,31 +19,42 @@
 
 ### Set up with VS Code
 1, Launch VS Code
+
 2, Install "Extension Pack for Java" via "Extensions" icon.
+
 3, Import as a project
   - File -> Open Folder....
   - Select the root directiry of the project.
   - Click 'Select Folder'.
 
-br>
 <hr>
-
-### Execute a test file and generate a coverage report
-1, Run a **test file** by right-clicking the file and selecting **Coverage as** -> **Junit Test**.
-
-2, The **Coverage view** appears automatically along with the **Terminal** or **Console**. An example is shown below:
-
-![Coverage View](./img/coverage_view1.jpg)
-
-<br>
-3, Generate an HTML Coverage Report by **right-clicking** some space in the Coverage view, **selecting** "Export Session", **choosing** "HTML format" and directory to save the report, and **clicking** "Finish" button.
-
-An **complete example of an HTML Coverage Report** are shown below:
-
-  ![An example of HTML coveage report](./img/an_example_HTML_coverage_report_with_related_files_and_folders.jpg)
 
 
 ### Generate two HTML coverage reports
+The coveage report must show the code coverage of the **program under the test** and the **tests** themselves. In this way, we can tell which tests contribute to the coverage and thus distinguish end-to-end testing and unit testing. 
 
-- End-to-end testing: put all the tests of the main method in one test file and generate by executing this test file.
-- Unit testing: put all the tests of the non-main methods in one test file  and generate by executing this test file.
+- Configure the **pom.xml** file. Change the value of the "scope" tag from "test" to "main" in the dependency blocks of "org.junit.jupiter".
+
+- Organize the test files
+  + End-to-end testing. Put all the tests of the main method in one test file (eg. the TestMain.java).
+  + Unit testing. Put all the tests of the non-main methods in another test file (eg. the TestRegularMethods.java).
+  + Copy these two test files where the program under the test is.
+  
+- Execute test files
+  + For end-to-end testing
+    * Only keep the test file for the end-to-end testing in "./src/test/java/com/".
+    * Remove all the other test files.
+    * Execute "mvn clean verify" in the terminal
+
+  + For unit testing, apply the same way as the end-to-end testing.
+
+- Check code coverage 
+  + A coverage report consists of all the files and folders in the "./target/site/jacoco/". An example is shown below:
+
+    ![converage files](./img/eg_coverage_report_files.jpg)
+
+  + Open the "index.html" to view code coverage. The coverage for end-to-end testing in this branch is given below:
+  ![converage files](./img/coverage-end-to-end.jpg)
+  The code coverage achieved here is 94%. Only the tests in the TestMain.java are executed to achieve this coverage. Hence this is the coverage report for the end-to-end testing. 
+
+
