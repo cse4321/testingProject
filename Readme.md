@@ -5,7 +5,7 @@
 **Class** *PureNameCheck* contains:
 
 - A **main** method and 
-- Two **regular** methods: 
+- Two **non-main** methods: 
   + *checkPureName* 
   + *getNameFromSystemIn*
 
