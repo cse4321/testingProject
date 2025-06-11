@@ -1,4 +1,4 @@
-### PureNameCheck
+### Program under the Test
 
 *PureNameCheck* is created as an example to show how to write JUnit test methods.
 
@@ -12,7 +12,7 @@
 **Two test classes**: 
 - *TestMain*: for end-to-end testing containing two test methods via testing the **main** method.
 
-- *TestRegularMethods*: for unit testing containing the test methods that test the  **regular** methods (non-main methods).
+- *TestOtherMethods*: for unit testing containing the test methods that test **non-main** methods.
 
 
 <hr>
@@ -25,7 +25,7 @@
   - Click 'directory' to choose the root directory of the project files.
   - Click 'finish'.
 
-3, Configure JUnit 5 .
+3, Configure JUnit 5.
 
  - Right-click your project, select **Build Path** > **Configure Build Path**.
  - Go to the **Libraries** tab, click **Classpath** and then **Add Library**.
@@ -59,4 +59,4 @@ An **complete example of an HTML Coverage Report** are shown below:
 ### Generate two HTML coverage reports
 
 - End-to-end testing: put all the tests of the main method in one test file (eg. TestMain.java) and generate by executing this file.
-- Unit testing: put all the tests of the non-main methods in another test file (eg. TestRegularMethods.java)  and generate by executing this file.
+- Unit testing: put all the tests of the non-main methods in another test file (eg. TestOtherMethods.java)  and generate by executing this file.
