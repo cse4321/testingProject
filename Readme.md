@@ -1,4 +1,4 @@
-### PureNameCheck
+### Program Under the Test
 
 *PureNameCheck* is created as an example to show how to write JUnit test methods.
 
@@ -12,7 +12,7 @@
 **Two test classes**: 
 - *TestMain*: for end-to-end testing containing two test methods via testing the **main** method.
 
-- *TestRegularMethods*: for unit testing containing the test methods that test the  **regular** methods (non-main methods).
+- *TestOtherMethods*: for unit testing containing the test methods that test **non-main** methods.
 
 
 <hr>
@@ -29,15 +29,30 @@
 
 <hr>
 
+### Check Code Coverage
+When checking code coverage, to ensure accurate results and avoid issues from previous builds, we need to clean to remove old build artifacts and get a fresh measurement.
 
-### Generate two HTML coverage reports
-The coveage report must show the code coverage of the **program under the test** and the **tests** themselves. In this way, we can tell which tests contribute to the coverage and thus distinguish end-to-end testing and unit testing. 
+So, to get the code coverage for a single test file named "testFileName", we use the following commands:
+
+```bash
+mvn clean 
+mvn -Dtest=testFileName test
+mvn jacoco:report
+```
+
+
+
+### Generate two HTML Coverage Reports
+
+The coverage report should show the code coverage of the **program under the test** and the **tests** themselves. This enables us to analyze test contributions to coverage, helping us differentiate between end-to-end and unit testing.
+
+Note that it is optional to follow the instructions below to generate reports. But for the coverage reports only containing the coverage of the program under the test, project demo is necessary.
 
 - Configure the **pom.xml** file. Change the value of the "scope" tag from "test" to "main" in the dependency blocks of "org.junit.jupiter".
 
 - Organize the test files
   + End-to-end testing. Put all the tests of the main method in one test file (eg. the TestMain.java).
-  + Unit testing. Put all the tests of the non-main methods in another test file (eg. the TestRegularMethods.java).
+  + Unit testing. Put all the tests of the non-main methods in another test file (eg. the TestOtherMethods.java).
   + Copy these two test files where the program under the test is.
   
 - Execute test files
