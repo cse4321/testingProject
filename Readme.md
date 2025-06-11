@@ -1,4 +1,4 @@
-### Program Under the Test
+### Program under the Test
 
 *PureNameCheck* is created as an example to show how to write JUnit test methods.
 
