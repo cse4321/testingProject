@@ -2,8 +2,10 @@
 .classpath
 .settings/org.eclipse.jdt.core.prefs
 .vscode
+.vscode/*
 bin/*.class
 /bin/
 /target/
 /target/*
+
 
