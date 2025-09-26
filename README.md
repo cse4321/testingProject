@@ -4,6 +4,8 @@ Perform **control-flow testing** on a fault-seeded Java program, [**Printtokens.
 
 [project slides](./project.summer.2025.pdf) | [project rubric](./rubric.pdf)
 
+Deadline: 
+
 ### Goals
 - **Identify and fix faults** through testing.
 - **Unit testing**: maximize **edge coverage** for all **non-main** methods.
