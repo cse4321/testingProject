@@ -36,7 +36,7 @@ Deadline:
 
 ### Submission
 
-- Check all the deliverables in the [project slides](./project.summer.2025.pdf).
+- Check all the deliverables in the [project slides](./project.fall.2025.pdf).
 - Put all the deliverables in Branch **main** in a folder "deliverables".
 - Commit the changes before the deadline. 
 
