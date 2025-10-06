@@ -4,7 +4,6 @@ Perform **control-flow testing** on a fault-seeded Java program, [**Printtokens.
 
 [project slides](./project.fall.2025.pdf) | [project rubric](./rubric.pdf)
 
-Deadline: 
 
 ### Goals
 - **Identify and fix faults** through testing.
