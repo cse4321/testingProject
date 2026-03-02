@@ -2,7 +2,6 @@
 ### Project
 Perform **control-flow testing** on a fault-seeded Java program, [**Printtokens.java**](./src/Printtokens.java).
 
-[project slides](./project.fall.2025.pdf) | [project rubric](./rubric.pdf)
 
 
 ### Goals
