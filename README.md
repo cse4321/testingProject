@@ -34,7 +34,7 @@ Perform **control-flow testing** on a fault-seeded Java program, [**Printtokens.
 
 ### Submission
 
-- Check all the deliverables in the [project slides](./project.fall.2025.pdf).
+- Check all the deliverables in the project slides.
 - Put all the deliverables in Branch **main** in a folder "deliverables".
 - Commit the changes before the deadline. 
 
